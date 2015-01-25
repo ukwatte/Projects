@@ -2,7 +2,6 @@ from numpy.core.umath import deg2rad, sin, cos, arctan2, sqrt
 from pygeocoder import Geocoder
 
 
-
 '''
 Work out the distance (user specified units) given two cities using haversine equation
 Based on : https://raw.githubusercontent.com/dabillox/pyprojects/master/citydistance.py
@@ -36,11 +35,11 @@ def main():
     print 'Type the first City: '
     cityA = raw_input()
 
-    #get second city
+    # get second city
     print 'Type the second city: '
     cityB = raw_input()
 
-    #get units
+    # get units
     units = ''
     while (units != 'km') & (units != 'm'):
         print 'Type distance units (miles or kilometers): '
@@ -52,11 +51,11 @@ def main():
         else:
             print 'units not recognised, please try again'
 
-    #find the distance in km
+    # find the distance in km
     try:
         distance = get_distance(get_latlongs(cityA),
                                 get_latlongs(cityB))
-        #display the distance
+        # display the distance
         if units == 'km':
             print str(distance), ' km'
         else:
