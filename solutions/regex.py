@@ -17,3 +17,4 @@ print ''.join(li)
 # python regex.py "aabaaha aba" a+b
 # this would print the string as is
 # but 'aab' and 'ab' would appear red
+# see https://asciinema.org/a/16071
